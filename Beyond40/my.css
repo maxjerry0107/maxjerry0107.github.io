@@ -1,0 +1,273 @@
+@font-face {
+  font-family: stamped-font;
+  font-display: swap;
+  src: url(https://umzu.com/fonts/stamped-font.eot?rkevfi&em-referer=https://cdn1.stamped.io&em-origin=cdn1.stamped.io);
+  src: url(https://umzu.com/fonts/stamped-font.eot?rkevfi&em-referer=https://cdn1.stamped.io&em-origin=cdn1.stamped.io#iefix)
+      format("embedded-opentype"),
+    url(https://umzu.com/fonts/stamped-font.ttf?rkevfi&em-referer=https://cdn1.stamped.io&em-origin=cdn1.stamped.io)
+      format("truetype"),
+    url(https://umzu.com/fonts/stamped-font.woff?rkevfi&em-referer=https://cdn1.stamped.io&em-origin=cdn1.stamped.io)
+      format("woff"),
+    url(https://umzu.com/fonts/stamped-font.svg?rkevfi&em-referer=https://cdn1.stamped.io&em-origin=cdn1.stamped.io#stamped-font)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+.fa {
+  display: inline-block;
+  font-style: normal;
+  line-height: 0;
+}
+.fa-star-half-o:before,
+.fa-star-o:before,
+.fa-star:before {
+  font-family: stamped-font, FontAwesome !important;
+}
+
+[class^="fa-"]:before {
+  font-family: stamped-font, FontAwesome, "Font Awesome 5 Pro",
+    "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.fa-star,
+.fa-star-checked,
+.fa-star-half-o,
+.fa-star-o {
+  color: #0092d6 !important;
+}
+
+.fa-star:before,
+.stamped-fa-star:before {
+  content: "\f005";
+}
+
+*,
+:focus,
+:hover {
+  outline: 0;
+}
+
+.summary-score {
+  font-family: "Montserrat", sans-serif;
+  font-size: 37px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-right: 5px;
+  margin-top: 0;
+  font-weight: bolder;
+}
+
+.summary-starrating {
+  float: none;
+  white-space: nowrap;
+}
+.summary-starrating i:before {
+  font-size: 26px !important;
+}
+.summary-caption .summary-text {
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: Lato, sans-serif;
+}
+.summary-caption {
+  display: inline-block !important;
+  clear: both;
+  float: none;
+  vertical-align: text-bottom;
+}
+.summary-caption1 {
+  display: inline-block !important;
+  clear: both;
+  float: none;
+  margin-top: 10px;
+  vertical-align: text-bottom;
+}
+.summary-ratings {
+  width: 300px;
+  margin-bottom: 20px !important;
+  float: left;
+  padding-left: 20px;
+  border-left: 1px solid #eee;
+  color: #999;
+  font-size: 12px;
+  line-height: normal;
+  border-right: 1px solid #eee;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.summary-rating {
+  margin-bottom: 3px;
+}
+.summary-rating-title {
+  font-size: 0 !important;
+  width: 95px !important;
+  width: 19%;
+  display: inline-block;
+  cursor: pointer;
+}
+.summary-rating:nth-child(1) .summary-rating-title:before {
+  content: "\f005\f005\f005\f005\f005";
+}
+
+.summary-rating:nth-child(2) .summary-rating-title:before {
+  content: "\f005\f005\f005\f005\f006";
+}
+
+.summary-rating:nth-child(3) .summary-rating-title:before {
+  content: "\f005\f005\f005\f006\f006";
+}
+
+.summary-rating:nth-child(4) .summary-rating-title:before {
+  content: "\f005\f005\f006\f006\f006";
+}
+
+.summary-rating:nth-child(5) .summary-rating-title:before {
+  content: "\f005\f006\f006\f006\f006";
+}
+.summary-rating:nth-child(1) .summary-rating-title:before,
+.summary-rating:nth-child(2) .summary-rating-title:before,
+.summary-rating:nth-child(3) .summary-rating-title:before,
+.summary-rating:nth-child(4) .summary-rating-title:before,
+.summary-rating:nth-child(5) .summary-rating-title:before {
+  font-family: stamped-font !important;
+  font-size: 17px;
+  width: 200px !important;
+  letter-spacing: -1px;
+  color: #777;
+}
+
+.summary-rating-count:before {
+  content: "(";
+}
+
+.summary-rating-count:after {
+  content: ")";
+}
+.summary-rating-bar {
+  height: 15px !important;
+  width: 130px !important;
+  display: inline-block;
+  background: #f0f0f0;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.summary-rating-bar > div {
+  font-size: 0 !important;
+  height: 15px;
+  line-height: 0;
+  padding: 0;
+}
+.summary-rating-bar-content {
+  line-height: normal;
+  display: flex;
+  padding: 1px 0 2px;
+  word-wrap: initial;
+  word-break: initial;
+  background-color: #0092d6 !important;
+}
+.summary-ratings .summary-rating .summary-rating-count {
+  color: #737978 !important;
+  width: 15%;
+  display: inline-block;
+  text-align: left;
+  padding-left: 5px;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+.summary-rating:hover {
+  opacity: 1 !important;
+}
+
+.summary-ratings:hover .summary-rating {
+  opacity: 0.5;
+}
+
+.summary-rating:hover {
+  opacity: 1 !important;
+}
+
+.summary-ratings.selected .summary-rating {
+  opacity: 0.5;
+}
+
+.summary-ratings.selected .summary-rating.selected {
+  opacity: 1;
+}
+
+.summary-actions {
+  margin-top: 0 !important;
+  display: block !important;
+  position: initial;
+  z-index: 3;
+  right: 0;
+  bottom: 45px;
+}
+
+.summary-actions-newquestion,
+.summary-actions-newreview {
+  float: right;
+  margin: 0 0 0 15px;
+}
+.summary-actions-newquestion,
+.summary-actions-newreview {
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  width: auto;
+  line-height: 30px;
+  background: 0 0;
+  color: #000;
+  border: 1px solid #ccd6e0;
+  padding: 3px 20px;
+  border-radius: 3px;
+  font-weight: 700;
+  box-shadow: 2px 3px 5px 0 #8888886b !important;
+  border-color: #212721 !important;
+  border-width: 2px !important;
+  cursor: pointer;
+}
+.summary-actions-newquestion:before {
+  content: "\f0e6 ";
+}
+.summary-actions-newreview:before {
+  content: "\e803 ";
+}
+
+.summary-actions-newquestion:before,
+.summary-actions-newreview:before {
+  font-family: stamped-font, FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: inherit;
+  padding-right: 8px;
+  display: inline-block;
+}
+
+.summary-actions-newquestion:hover,
+.summary-actions-newreview:hover {
+  text-decoration: none;
+  opacity: 0.9;
+  box-shadow: none !important;
+}
